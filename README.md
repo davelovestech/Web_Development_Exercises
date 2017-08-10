@@ -1,2 +1,2 @@
 # Codecademy-Exercises
-This'll be my first code post to GitHub :)
+I am learning Full Stack Web Development on Codecademy :)
