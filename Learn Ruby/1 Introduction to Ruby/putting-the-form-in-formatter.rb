@@ -1,3 +1,9 @@
+=begin
+This program collects name & hometown information from the user with the gets.chomp command.
+It corrects for improper capitalization usage by the user with the upcase and capitalize methods.
+I go into more detail about how these methods work in the README.md
+=end
+
 print "What's your first name? "
 first_name = gets.chomp
 first_name.capitalize!
