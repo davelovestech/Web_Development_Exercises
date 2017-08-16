@@ -1,0 +1,100 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.main {
+  position: relative;
+}
+
+.main video {
+  width: 100%;
+}
+
+.main .content {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.main h1 {
+  color: #fff;
+  font-size: 50px;
+  margin-top: 0;
+  margin-bottom: 50px;
+  text-shadow: 0 2px 3px rgba(0,0,0,.4);
+  padding: 0 40px;
+}
+
+
+.supporting {
+  margin-top: 100px;
+  text-align: center;
+  margin-bottom: 130px;
+}
+
+.supporting h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.supporting p {
+  color: #333;
+  font-size: 21px;
+  font-weight: 300;
+  padding: 0 30px;
+}
+
+.feature {
+  height: 500px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/excursion/camp.png) no-repeat center center;
+  background-size: cover;
+}
+
+.footer {
+  padding: 30px;
+  background-color: #eee;
+  font-size:11px;
+}
+
+@media (max-width: 960px) {
+  .main {
+    height: 540px; 
+  }
+  .main video {
+    height: 540px; 
+    width: 960px;
+  }
+  .main h1 {
+    font-size: 32px;
+  }
+}
+.btn {
+  background-color: #4386fc;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 300;
+  padding: 15px 26px;
+  text-decoration: none;
+}
+.content {
+  position: absolute;
+  top: 200px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+}
+.app {
+  width: 87px;
+}
