@@ -19,10 +19,10 @@ class PagesController < ApplicationController def home end end
 6.	Open config/routes.rb and underneath line 1, type: get 'welcome' => 'pages#home'
     a.	Now when a user visits http://localhost:8000/welcome, the route get 'welcome' => 'pages#home' will tell Rails to send this request to the Pages controller's home action.
 7.	Open app/views/pages/home.html.erb, and type in the following HTML. Fill in your own name.
-    <div class="main"> 
-      <div class="container"> 
-        <h1>Hello my name is __</h1> 
-          <p>I make Rails apps.</p>
-      </div>
-    </div>
+#    <div class="main"> 
+#      <div class="container"> 
+#        <h1>Hello my name is David</h1> 
+#          <p>I make Rails apps.</p>
+#      </div>
+#    </div>
 8.	View your app by visiting http://localhost:8000/welcome in the browser.
