@@ -1,0 +1,15 @@
+<div class="book">
+<p class="title"><%= @book.title%></p>
+<p class="author">by <%= @book.author%></p>
+<p class="publisher">(<%= @book.publisher%>)</p>
+<p class="description"><%= @book.description%></p>
+</div>
+
+<div class="reviews">
+<% @reviews.each do |review| %>
+  <div class="review">
+    <p class="author"><%= review.author%></p>
+    <p class="comment"><%= review.comment%></p>
+  </div>
+<% end %>
+</div>
