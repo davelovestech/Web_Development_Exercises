@@ -1,0 +1,77 @@
+$top-foods: ("Sugar Cane" 1898),
+("Corn" 1017),
+("Rice" 738),
+("Wheat" 711),
+("Cow Milk" 635),
+("Potatoes" 374),
+("Vegetables" 279),
+("Soy Beans" 278),
+("Cassava" 263),
+("Sugar Beets" 247);
+$diamond-blue: rgba(0, 159, 255, .6);
+$sea-green: rgba(10, 165, 153, .6);
+$pale-green: rgba(167, 240, 213, .6);
+
+@each $food, $tons-produced in $top-foods{
+	$i: index($top-foods,($food $tons-produced));
+  rect:nth-child(#{$i + 1}) {
+    height: #{$tons-produced/3}px;
+    
+        @if ($i % 2 == 0) {
+      		color: fade-out($sea-green, $i*5/100);
+    }
+
+    @else if($i % 3 == 0) {
+      color: fade-out($pale-green, $i*5/100);
+    }
+
+    @else {
+      background-color: fade-out($diamond-blue, $i*5/100);
+    }
+
+    
+    &:before {
+    content : $food;
+}
+          &:after {
+        content: $tons-produced + "m";
+      }  
+
+}
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  padding-bottom: 20px;
+  color: #434444;
+}
+
+span {
+  display: block;
+}
+
+rect {
+  width: 24px;
+  float: left;
+  padding-left: 25px;
+  padding-top: 7px;
+  white-space: nowrap;
+  word-break: break-all;
+  position: relative;
+  bottom: 0px;
+  font-size: 12px;
+  color: #707070;
+  font-family: 'Montserrat', sans-serif;
+  &:before {
+    display: inline-block;
+    -webkit-transform: rotate(90deg);
+    transform-origin: left top 0;
+    float: left;
+  }
+  &:after {
+    position: absolute;
+    top: -15px;
+    left: 0px;
+  }
+}
