@@ -1,8 +1,12 @@
 /*This is a simulator of the popular game rock, paper scissors.
-The user must input their choice into the program itself. I tried to use the user prompt method, but the CodeCademy learning platform kept flagging "prompt" as undefined ... maybe I've done something wrong. Nontheless, the computer choice is randomly determined and then the user is notified of the computer choice and who won.
+The user must input their choice into the program itself. I tried to use the user prompt method, 
+but the CodeCademy learning platform kept flagging "prompt" as undefined ... 
+maybe I've done something wrong. Nontheless, the computer choice is randomly determined and 
+then the user is notified of the computer choice and who won.
 */
 //This code block uses an if/else structure to ensure that 
-//the user entry is a viable command. Also, it converts the //userInput to lower case to account for user input //capitalization differences.
+//the user entry is a viable command. Also, it converts the //userInput to lower case to account for user input 
+//capitalization differences.
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
   if (userInput === 'rock') {
