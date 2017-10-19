@@ -1,5 +1,11 @@
 /*
-This program calculates a users sleep debt. Ideally, we'd input the user's sleep data in fromt FitBit or something like that, but I'm just a beginner. I made up hours of sleep #s for seven days of a standard week and stored them in a switch statement. The hours slept are calculated from that switch statement. And the ideal # of hours of sleep are determined based on a single night * 7. Then, there's an if/else structure that determines
+This program calculates a users sleep debt. Ideally, we'd input 
+the user's sleep data in fromt FitBit or something like that, 
+but I'm just a beginner. I made up hours of sleep #s for seven 
+days of a standard week and stored them in a switch statement. 
+The hours slept are calculated from that switch statement. 
+And the ideal # of hours of sleep are determined based on a 
+single night * 7. Then, there's an if/else structure that determines
 if the user is getting too much, not enough, or just the right
 amount of sleep. A console.log is used to display that info.
 */
