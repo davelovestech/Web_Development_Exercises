@@ -27,7 +27,8 @@ commented out "eventTrainingTimes." It was transferred to
 within the "getDaysToTrain function. Additionally, within the
 "getEventActivities()" function, I changed the variable
 "activities" from a constant into a "let activities;" and now
-it is redefined within each if sub-block. Also, the returns were initially within each if sub-block; I commented those out
+it is redefined within each if sub-block. Also, the returns
+were initially within each if sub-block; I commented those out
 and left a single "return activities.join(', ');" right before
 the final closing bracket within the "getEventActivities()"
 function. Initially the console.log() was out in the open, so I
@@ -41,10 +42,12 @@ the getEventActivities() AND the getDaysToTrain functions
 BECAUSE it was initially available because it was global, but
 now it's trapped up in a function. 
 */
-//Note the next three lines are global variables that I //commented out once I replaced them with functions.
+//Note the next three lines are global variables that I
+//commented out once I replaced them with functions.
 //let allEvents;
 //let event;
-//const eventTrainingTimes = {'Marathon': 50, 'Triathlon': 100, 'Decathlon': 200 };
+//const eventTrainingTimes = {'Marathon': 50, 'Triathlon': 100,
+//'Decathlon': 200 };
 
 //This is a collection of the three event types.
 const getAllEvents  = () => {
@@ -95,7 +98,10 @@ const getEventActivities = event => {
   }
   return activities.join(', '); 
 };
-//This function uses the getAllEvents function to get the event //types and then uses a key-value pair to return the number of //days required to train. Note that the "event" variable from //getRandomEvent is necessary as a parameter. 
+//This function uses the getAllEvents function to get the event
+//types and then uses a key-value pair to return the number of
+//days required to train. Note that the "event" variable from
+//getRandomEvent is necessary as a parameter. 
 const getDaysToTrain = event => {
   const allEvents = getAllEvents();
   //allEvents = ['Marathon', 'Triathlon', 'Decathlon'];
@@ -116,6 +122,7 @@ const getEventMessage = () => {
   const myEvent = getRandomEvent();
   console.log('Your event is a ' + myEvent + '. Your event activities consist of ' + getEventActivities(myEvent) + '. You have ' + getDaysToTrain(myEvent) +  ' days to train.');
 }
-//Here I've commented out the initial program call. Note that //getEventMessage is what I'm calling now. 
+//Here I've commented out the initial program call. Note that
+//getEventMessage is what I'm calling now. 
 //getRandomEvent();
 getEventMessage();
