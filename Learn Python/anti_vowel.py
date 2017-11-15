@@ -1,5 +1,31 @@
-"""This program is called anti_vowel. It is part of the
-Codecademy Learn Python track (in the 8 Loops chapter). 
+"""This is Codecademy > Learn Python > 8 Loops > 
+anti_vowel. I need to create a program the takes
+a string input & returns a string output with all
+vowels removed. For fun, I decided to see how far
+Codecademy's code-checkig goes by making if/elif/else
+logic that'll return the expected output, BUT all of
+the vowel removal was done manually in the logic loops.
+Codecademy does 6 inputs, 5 static & one seemingly random.
+See the end of the code for that playful game. Now, here's 
+the functional code:"""
+#Note that Y is sometimes a vowel, BUT not here.
+#I made a list of lower & upper case vowels.
+#Then I cycle through the characters in text with a for loop.
+#I use "not in" to make sure there are no vowels & then append
+#that input to the return_string. If there are vowels, it's 
+#just skipped. &LOL @ ~100 lines of comments for 9 lines 
+#of code :P
+def anti_vowel(text):
+  print "Input string is: " + text
+  return_string = ""
+  vowels = ["a", "e", "i", "o", "u", "A", "E", "I", "O", "U"]
+  for character in text:
+    if character not in vowels:
+      return_string += character
+  print "Return string is: " + return_string
+  return return_string
+  
+"""
 The program is supposed to return the inputted string,
 but with all of the vowels removed. For fun, I decided
 to see how far Codecademy's code testing goes; for every
