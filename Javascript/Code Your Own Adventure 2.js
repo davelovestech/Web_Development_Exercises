@@ -1,3 +1,12 @@
+/*
+This program is a simple simulation of working in an academic biology lab. Your experiments didn't work ... you
+can now choose between going home, repeating the experiments, or changing your protocol. The program uses a prompt
+to save the user input and then calls .toUpperCase on the input to ensure that the user input matches the expected
+input. Then a switch/case is used to check for the three possible entries. Once a case is selected, another sub-prompt
+gives two possible choices for each case & if/else logic determines different console.log outputs. Running this code
+in Codecademy yields an error that prompt is not an acceptable method, BUT W3Schools.com says it's fine, so I'm keeping
+it that way. 
+*/
 var user = prompt("Your experiment didn't work. Do you go HOME, REPEAT or CHANGE PROTOCOL?").toUpperCase();
 
 switch(user)
