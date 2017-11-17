@@ -1,0 +1,1 @@
+sample = ['GTA','GGG','CAC']
