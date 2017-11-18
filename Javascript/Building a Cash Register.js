@@ -1,3 +1,13 @@
+/*
+This program is called Building a Cash Register. It allows for adding new StaffMember objects
+with defined names & discountPercent instances. 
+
+*/
+/*
+The function StaffMember accepts inputs of name & discountPercent and creates new StaffMember 
+objects out of that. There are also two pre-made object variables of sally & bob that already
+have these values. 
+*/
 function StaffMember(name,discountPercent){
     this.name = name;
     this.discountPercent = discountPercent;
@@ -6,9 +16,14 @@ function StaffMember(name,discountPercent){
 var sally = new StaffMember("Sally",5);
 var bob = new StaffMember("Bob",10);
 
-// Create yourself again as 'me' with a staff discount of 20%
+// Here is 'me' with a staff discount of 20%
 var me = new StaffMember("David", 20);
-
+//This is the cashRegister object with starting 0 values for total & lastTransaction amount.
+//It has the ability to add a new item with the add instance. This only accepts itemCost & it
+//also keeps track of the last item cost for the voidLastTransaction object instance. The scan
+//function uses a swith case to screen for 1 of 4 choices. The voidLastTransaction function subtracts
+//the last transcation amount from the total. The applyStaffDiscount function drops the total by
+//employee's discountPercent. 
 var cashRegister = {
     total:0,
     lastTransactionAmount: 0,
