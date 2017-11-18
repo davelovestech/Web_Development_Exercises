@@ -1,5 +1,13 @@
 /*
-
+This program has three different functions: printPerson, list, search, & add. Initially there are three
+variables: object bob and object mary contain firstName, lastName, phoneNumber and email address AND 
+the variable contacts is a list containing the bob and mary objects. The function printPerson will print
+the firstName and lastName of the supplied object. More instances of those objects could be added to that
+function if desired. The list function prints the result of the printPerson function for every item of the 
+contacts list. The search function will search the contacts list for every instance of a matching supplied
+last name AND then call the printPerson function on that found list item. The add function will ADD a new 
+person instance to the contacts list. Note the differences of calling the functions BEFORE and AFTER
+adding the Spencer instance to the contacts list. 
 */
 
 var bob = {
@@ -48,6 +56,7 @@ function add(firstName, lastName, phoneNumber, email)
 {
     contacts[contacts.length] = {firstName: firstName, lastName: lastName, phoneNumber: phoneNumber, email: email}
 }
+
 console.log("-------------------------------------------------------")
 console.log("\nThe result of calling the printPerson function on the bob object is: ")
 printPerson(bob)
@@ -75,3 +84,6 @@ printPerson(contacts[2])
 
 console.log("\nThe result of calling the search function on Davis, AFTER using add to + a new part of the contacts list is: ")
 search("Davis");
+
+console.log("\nThe new result of calling the list function, AFTER adding the Spencer item, is: ")
+list()
