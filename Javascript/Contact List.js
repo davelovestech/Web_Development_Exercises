@@ -1,3 +1,9 @@
+/*
+This Javascript program creates an object called friends that contains two instances: bill & steve.
+Each instance has a firstName, lastName, number & address. This program has two functions: list & 
+search. list displays the firstName of each instance of the friends object. search prints each
+property of the object instance parameter.
+*/
 var friends = {};
 friends.bill = {
     firstName: 'Bill',     
@@ -26,3 +32,9 @@ var search = function (name) {
        }
     }
 };
+console.log("The result of calling the search function on 'Bill' is: \n")
+search('Bill')
+console.log("\nThe result of calling the search function on 'Steve' is: \n")
+search('Steve')
+console.log("\nThe result of calling the list function on the friends object is: \n")
+list(friends)
