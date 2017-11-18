@@ -17,7 +17,9 @@ The displayMessage() function uses console.log() to print out all of the message
 with the string "What is the color of the sky?". I could improve this program
 by having a prompt window asking for the text to be replaced, BUT Codecademy refuses
 to recognize prompt as a command; I have encountered this problem many times previously & I 
-do not know how to addres it. 
+do not know how to address it. Each function call is prepended by a console.log that explains
+the upcoming function AND then there's a console.log() that prints a series of "-----------"
+to make things easier to read. 
 */
 function displayMessage() {
   console.log("The input string is: 'What is the color of the sky?'")
