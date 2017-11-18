@@ -1,6 +1,6 @@
 def translator():
-  print("\nWelcome to the Annakinese translator!")
-  statement = input("\nWhat do you want to translate into Annakinese? ")
+  print("\nWelcome to the translator!")
+  statement = input("\nWhat do you want to translate? ")
   insert_this = input("\nWhat goes after the syllables? ")
   translated = ""
   syllable = ['a', 'e', 'i', 'o', 'u', 'y', 'A', 'E', 'I', 'O', 'U', 'Y']
@@ -16,6 +16,6 @@ def translator():
   print(statement)
   print("\nThe thing that goes after syllables is: ")
   print(insert_this)
-  print("\nYour statement translated into Annakinese is: ")
+  print("\nYour statement translated is: ")
   print(translated)
 translator()
