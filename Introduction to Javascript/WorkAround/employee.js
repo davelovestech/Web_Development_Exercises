@@ -1,7 +1,7 @@
 /*
 This Codecademy project is called WorkAround. It's an 
 instructional lesson on using modules. employee.js exports
-all of the functions created here into workAround.js, where 
+all of its functions into workAround.js, where 
 the functions are called and the results are printed to the
 console. 
 */
