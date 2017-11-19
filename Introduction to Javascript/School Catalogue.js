@@ -60,6 +60,18 @@ class PrimarySchool extends School {
   get pickupPolicy() {
     return this._pickupPolicy;
   }
+  //When I first completed this exercise, I did not have this
+  //code here. I added it, so I can call the pickupPolicy to
+  //be printed at the end of the program. I was initially
+  //printing the correct pickupPolicy, BUT then there was an
+  //extra undefined that was coming up. It turns out I was 
+  //using console.log in this function AND also in the call of
+  //this function at the end of the program. Now it just has
+  //The console.log here and a call for this function at the
+  //end of the program. 
+  pickupPolicy() {
+    console.log(this._pickupPolicy);
+  }
 }
 //The HighSchool is also an extension of the main School class.
 //It has sportsTeams in addition to the previously established
@@ -90,3 +102,13 @@ console.log(School.pickSubstituteTeacher(['Jamal Crawford', 'Lou Williams', 'J. 
 const alSmith = new HighSchool('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
 console.log("\nHere the Al E. Smith school's sports teams are being printed: ")
 alSmith.sportsTeams();
+
+console.log("\nHere, there's a call to the pickupPolicy for the Lorraine Hansbury school: ")
+lorraineHansbury.pickupPolicy();
+
+
+
+
+
+
+
