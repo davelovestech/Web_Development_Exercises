@@ -1,3 +1,9 @@
+"""
+This Python program is called Plan Your Trip. You can use it to plan trips. The trip_cost call
+can be any city within the plan_ride_cost function, the second parameter is the # of days of
+a trip and the last parameter is the spending money for the trip. The program calculates the
+total cost of the trip for the user. 
+"""
 def hotel_cost(nights):
   return 140 * nights
 
