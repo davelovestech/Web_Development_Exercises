@@ -1,3 +1,12 @@
+/*
+This program is part of the Codecademy Introduction to
+Javascript track. It's from chapter 8: Objects. The program
+uses data structures to create sports teams, players & games. 
+*/
+
+//The team object encapsulates all of the program except for
+//the function calls at the end. There are no constructors.
+//lists of objects for players & games are created first. 
 const team = {
   _players: [
     {firstName: "Amy",
@@ -21,12 +30,14 @@ const team = {
     teamPoints: 11,
     opponentPoints: 88},
   ],
+  //There are functions for getting games & players. 
   get games() {
     return this._games;
   },
   get players() {
     return this._players;
   },
+  //There are also functions to add players and to add games. 
   addPlayer(firstName, lastName, age) {
     let player = {
       firstName: firstName,
@@ -44,16 +55,19 @@ const team = {
     this.games.push(game);
   }
 };
+//Here, more players are being added. 
 team.addPlayer("Steph", "Curry", 28);
 team.addPlayer("Lisa", "Leslie", 44);
 team.addPlayer("Bugs", "Bunny", 76);
-
+//This prints out all of the players.
+console.log('The players are: ')
 console.log(team.players);
-
+//Here, new games are added.
 team.addGame("The Devil", 13, 9);
 team.addGame("Baddies", 2, 5);
 team.addGame("Leslie Knope", 5, 2);
-
+//This prints out all of the games
+console.log('\nHere are all of the games: ')
 console.log(team.games);
 
 
