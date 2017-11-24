@@ -1,3 +1,13 @@
+/*
+This Javascript project is from the Codecademy
+Learn ReactJS: Part 1 track. This particular 
+project is from the Part 1 track in chapter 2. 
+It is called Authorization form. The goal of 
+this program is to hide contact information of
+the website owner until AFTER a user has entered
+a password. 
+*/
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 
